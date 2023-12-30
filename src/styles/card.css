@@ -1,0 +1,182 @@
+/* Estilos para la tarjeta */
+.tarjeta {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-imagen {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .tarjeta-contenido {
+    flex: 1;
+  }
+  
+  .tarjeta-titulo {
+    margin: 0;
+  }
+  
+  .tarjeta-descripcion {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-precio {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .boton-agregar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton-agregar:hover {
+    background-color: #45a049;
+  }
+  .boton-quitar {
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton-quitar:hover {
+    background-color: #a04545;
+  }
+  
+  /* Estilos para el carrito */
+  .carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.h1-h{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  white-space: nowrap; /* Evitar que el texto se divida */
+  animation: escribir 10s steps(100, end) infinite; 
+}
+.img-h-c{
+  display: flex;
+  justify-content: center;
+}
+.btn-h-c{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn-h{
+  border: none;
+  background-color: #1e55cb;
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px;
+}
+.a-h{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+.btn-h:hover{
+  background-color: #00096e;
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.footer{
+  height: 100px;
+  margin-top: 200px;
+  border-top: 2px solid #000;
+}
+.ul-f{
+  display: flex;
+}
+.li-f{
+  padding: 20px;
+  list-style: none;
+  margin-top: 30px
+}
+.a-f{
+  color: black;
+  font-size: 20px;
+}
+.a-f:hover{
+  font-size: 30px;
+  border-bottom: 2px solid #000;
+}
+.div-sec{
+  height: 300px;
+  width: 1000px;
+  margin-left: 150px;
+  margin-top: 20px;
+  border: 2PX solid #000;
+  border-radius: 20px;
+}
+.img-sec{
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.h2-sec1{
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  top: 100px;
+  border-bottom: 2px solid #fff;
+  left: 300px;
+  font-size: 40px;
+}
+.h2-sec2{
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  top: 410px;
+  border-bottom: 2px solid #fff;
+  left: 300px;
+  font-size: 40px;
+}
+.h2-sec3{
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  top: 730px;
+  border-bottom: 2px solid #fff;
+  left: 300px;
+  font-size: 40px;
+}
+.h2-sec4{
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  top: 1050px;
+  border-bottom: 2px solid #fff;
+  left: 300px;
+  font-size: 40px;
+}
