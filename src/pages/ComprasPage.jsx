@@ -23,7 +23,7 @@ export const ComprasPage = () => {
     <hr />
 
     {productos.map(producto => (
-        <Card 
+        <Card loading='lazy'
         key={producto.id}
         imagen={producto.image}
         titulo={producto.title}

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Card } from '../components/Card';
 import { ProductosContext } from '../context/ProductosContext';
 import { CarritoContext } from '../context/CarritoContext';
+import { NavLink } from 'react-router-dom';
 
 export const ElectronicsPage = () => {
   const { productos } = useContext(ProductosContext);
@@ -24,11 +25,13 @@ export const ElectronicsPage = () => {
 
   return (
     <>
+      <NavLink to={'/sections'}><button className='btn-arrow'><i class="fa-solid fa-arrow-left"></i></button></NavLink>
       <h1>Electronics </h1>
       <hr />
 
       {electronicsProducts.map(producto => (
         <Card
+          loading='lazy'
           key={producto.id}
           imagen={producto.image}
           titulo={producto.title}

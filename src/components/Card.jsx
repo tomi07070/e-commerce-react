@@ -20,19 +20,21 @@ export const Card = ({ imagen, titulo, descripcion, precio, handleAgregar, handl
             <div className="tarjeta-contenido">
                 <h3 className="tarjeta-titulo">{titulo}</h3>
                 <p className="tarjeta-descripcion">{descripcion}</p>
-                <p className="tarjeta-precio">{precio}</p>
+                <p className="tarjeta-precio">{precio}$</p>
 
                 {added
-                    ? <button
+                    ?<div className="boton-quitar-div">  
+                    <button
                         type="button"
                         className="boton-quitar"
                         onClick={clickQuitar}
-
                     >
                         Remove from cart
-
                     </button>
-                    : <button
+                    </div>
+                    : 
+                    <div className="boton-agregar-div">
+                    <button
                         type="button"
                         className="boton-agregar"
                         onClick={clickAgregar}
@@ -40,6 +42,7 @@ export const Card = ({ imagen, titulo, descripcion, precio, handleAgregar, handl
                         Add to cart
 
                     </button>
+                    </div>
                 }
 
             </div>

@@ -16,7 +16,7 @@ export const CarritoPage = () => {
 
     return (
         <>
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -30,7 +30,7 @@ export const CarritoPage = () => {
                         listaCompras.map(item => (
                             <tr key={item.id}>
                                 <th>{item.title}</th>
-                                <td>{item.price}</td>
+                                <td>{item.price}$</td>
                                 <td>
                                     <button 
                                     className="btn btn-ouline-primary" 
@@ -56,13 +56,14 @@ export const CarritoPage = () => {
                     <th><b>TOTAL: </b></th>
                     <td></td>
                     <td></td>
-                    <td>${calcularTotal()}</td>
+                    <td>{calcularTotal()}$</td>
 
                 </tbody>
             </table>
 
-            <div className="d-grid gap-2">
+            <div className="d-grid gap-2" id="btn-c">
                 <button 
+                id="btn-pene"
                 className="btn btn-primary"
                 onClick={handleImpresion}
                 disabled={listaCompras<1}

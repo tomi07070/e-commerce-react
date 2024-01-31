@@ -1,5 +1,5 @@
 import React from 'react'
-import image  from '../images/image.png'
+import image  from '../images/image.webp'
 import { NavLink } from 'react-router-dom'
 
 
